@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Anta&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyFolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="nav">
+        <header>
+            <div class="logo">
+                <h2>MyFolio</h2>
+            </div>
+            <div class="items">
+                <a href="portfolio.html">
+                    <ul>home</ul>
+                </a>
+                <a href="#section1" class="scroll-link">
+                    <ul>skill</ul>
+                </a>
+
+                <a href="#section2" class="scroll-link">
+                    <ul>about</ul>
+                </a>
+                <a href="#footer" class="scroll-link">
+                    <ul>contact</ul>
+                </a>
+            </div>
+        </header>
+    </div>
+
+    <main>
+        <div class="home">
+            <span class="text">
+                <h1>I’m a Computer System Engineer specialising in <span>Web Developing</span> and </h1>
+                <h1><span>Interaction Design</span></h1>
+            </span>
+            <span class="icon"><a href="#section1" class="scroll-link"><img src="icon/chevron-down.png" alt=""></a></span>
+        </div>
+    </main>
+
+    <div id="section1">
+        <div class="hero">
+            <h1>Selected <span class="skill">Skills</span></h1>
+        </div>
+        <div class="container cont1">
+            <div class="imgbox img1">
+                <img class="image1" src="Screenshot 2024-02-25 002403.png" alt="">
+                <img src="image2.png" alt="" class="image2">
+                <img src="image3.png" alt="" class="image3">
+            </div>
+            <div class="para webdev">
+                <h3>Websites Development</h3>
+                <h5>Passionate beginner web developer <br> with a keen interest in crafting <br> engaging and
+                    user-friendly <br> websites. <span>Proficient in HTML, CSS, <br> and JavaScript</span></h5>
+                <a href="" class="view-work-btn">Veiw Work</a>
+            </div>
+        </div>
+        <div class="container cont">
+            <div class="para webdev">
+                <h3>Websites Development</h3>
+                <h5>Passionate beginner web developer <br> with a keen interest in crafting <br> engaging and
+                    user-friendly <br> websites. <span>Proficient in HTML, CSS, <br> and JavaScript</span></h5>
+                <a href="" class="view-work-btn">Veiw Work</a>
+            </div>
+            <div class="imgbox img1">
+                <img class="image1" src="Screenshot 2024-02-25 002403.png" alt="">
+                <img src="image2.png" alt="" class="image2">
+                <img src="image3.png" alt="" class="image3">
+            </div>
+        </div>
+        <div class="container cont cont2">
+            <div class="imgbox img1">
+               <img class="studio-img" src="studio.png" alt="">
+            </div>
+            <div class="para webdev">
+                <h3>Websites Development</h3>
+                <h5>Passionate beginner web developer <br> with a keen interest in crafting <br> engaging and
+                    user-friendly <br> websites. <span>Proficient in HTML, CSS, <br> and JavaScript</span></h5>
+                <a href="" class="view-work-btn">Veiw Work</a>
+            </div>
+        </div>
+        <div class="container cont">
+            <div class="para webdev">
+                <h3>Websites Development</h3>
+                <h5>Passionate beginner web developer <br> with a keen interest in crafting <br> engaging and
+                    user-friendly <br> websites. <span>Proficient in HTML, CSS, <br> and JavaScript</span></h5>
+                <a href="" class="view-work-btn">Veiw Work</a>
+            </div>
+            <div class="imgbox img1">
+                <img class="image1" src="Screenshot 2024-02-25 002403.png" alt="">
+                <img src="image2.png" alt="" class="image2">
+                <img src="image3.png" alt="" class="image3">
+            </div>
+        </div>
+
+    </div>
+    <div id="section2">
+        <div id="sec-2-container">
+            <div class="about">
+                <h2>
+                    A Bit About Me
+                </h2>
+                <div class="about-para">
+                    <div>I am a Website Developer who is</div>
+                    <div>passionate about creating <span>beautiful</span></div>
+                    <div><span>and joyful digital experiences.</span></div>
+                    <div><span>Besides design, I love music, games</span></div>
+                    <div><span>and travelling.</span> </div>
+                </div>
+            </div>
+            <div class="about-img">
+                <img src="music.png" alt="">
+                <div class="img-2-3">
+                    <img src="games.png" alt="">
+                    <img src="travel.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="footer-text">Get <span>in Touch</span></div>
+        <div class="footer-text footer-text-2">So that we can talk more about</div>
+        <div class="footer-icons">
+            <a href=""><abbr title="Mail"><img src="Mail.png"
+                        alt="Mail"></abbr></a>
+            <a href="https://www.linkedin.com/in/syed-raheel-059773261/"><abbr title="LinkedIn"><img src="LinkedIn.png" alt="LinkedIn"></abbr></a>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Add click event listener to each anchor tag with class 'scroll-link'
+            var scrollLinks = document.querySelectorAll('.scroll-link');
+
+            scrollLinks.forEach(function (link) {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault(); // Prevent default behavior of anchor tag
+
+                    // Get the target section's ID from the href attribute
+                    var targetId = this.getAttribute('href').substring(1);
+
+                    // Get the target section element
+                    var targetSection = document.getElementById(targetId);
+
+                    // Scroll to the target section smoothly
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>

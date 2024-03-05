@@ -1,0 +1,318 @@
+@font-face {
+    font-family: Myfolio;
+    src: url(FashionVictim.woff);
+}
+
+* {
+    background-color: rgba(0, 0, 5, 0.991);
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    margin: 15px;
+    height: 45px;
+    background-color: rgba(0, 0, 5, 0.991);
+    position: sticky;
+}
+
+header {
+
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+
+
+}
+
+.logo img {
+
+    height: 40px;
+}
+
+.items {
+    text-transform: capitalize;
+    display: flex;
+    gap: 25px;
+    color: white;
+    font-family: sans-serif;
+
+}
+
+.items a {
+    margin: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    font-weight: 700;
+    color: white;
+    transition: color 0.3s;
+}
+
+ul:hover {
+
+    z-index: 10px;
+    transition: 0.3s;
+    background-image: linear-gradient(45deg, #D89D3C, #C54B8C);
+    -webkit-background-clip: text;
+    /* Clip the background to the text */
+    color: transparent;
+}
+
+.logo h2 {
+    background-image: linear-gradient(45deg, #D89D3C, #C54B8C);
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
+
+.logo {
+
+    z-index: 10;
+    font-weight: bold;
+    font-size: x-large;
+    font-family: Anta;
+    color: beige;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(0deg, #010208, #010206, #010206, #010206, #010101, #010101);
+    width: 100%;
+    height: 470px;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.text h1 {
+    font-size: 35px;
+    align-content: center;
+    text-align: center;
+    opacity: 0.8;
+    font-weight: 10;
+    font-family: abel;
+    color: #E3E4E6;
+}
+
+.text span {
+    opacity: 0.99;
+    font-weight: 800;
+}
+
+/* icon / chevron-down */
+.icon {
+   
+    width: 40px;
+    height: 40px;
+    left: calc(50% - 40px/2);
+}
+
+
+.items img {
+    border-radius: 10px;
+    position: relative;
+    left: 18px;
+    background-color: aliceblue;
+}
+
+#skillline {
+    position: relative;
+    left: 15px;
+    background-color: aliceblue;
+
+}
+
+.hero h1 {
+    color: white;
+    font-family: abel, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 30px;
+    margin: 10px;
+    font-weight: 10;
+    opacity: 0.9;
+    font-size: 35px;
+}
+
+.skill {
+    font-weight: bolder;
+}
+
+.container {
+    display: flex;
+    padding-left: 47px;
+}
+
+.webdev {
+    font-size: larger;
+    opacity: 0.9;
+    font-weight: 10;
+    padding-left: 40px;
+    color: white;
+    font-family: abel, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 90px;
+}
+
+.cont2 {
+    display: flex;
+    padding-right: 320px;
+}
+
+.imgbox {
+    background-color: #D8F5C8;
+    height: 260px;
+    width: 380px;
+    padding-left: 20px;
+    border-radius: 5px;
+}
+.studio-img{
+    height: 200px;
+    width: 350px;
+}
+
+.image1 {
+    width: 120px;
+    height: 80px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    left: 180px;
+    top: 29px;
+    z-index: 10;
+}
+
+.image2 {
+    width: 120px;
+    height: 80px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    left: 56px;
+    top: 152px;
+    z-index: 10;
+}
+
+.image3 {
+    width: 120px;
+    height: 80px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    left: -175px;
+    top: 91px;
+    z-index: 10;
+}
+
+main {
+    margin-bottom: 135px;
+}
+
+.cont {
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.view-work-btn {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    padding: 4px 12px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    margin-top: 7px;
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: small;
+}
+
+/* Style the arrow icon */
+.view-work-btn::after {
+    content: "\2192";
+    /* Unicode arrow right character */
+    margin-left: 8px;
+    font-size: 1.2em;
+}
+
+/* Change button background on hover */
+.view-work-btn:hover {
+    background-image: linear-gradient(45deg, #D89D3C, #C54B8C);
+}
+
+#sec-2-container {
+    font-weight: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 34px;
+    width: 1000px;
+    height: 848px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.about-para span {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.about {
+    color: white;
+}
+
+.about-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+    width: 596px;
+    height: 848px;
+
+}
+
+.img-2-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.about-img img {
+    z-index: 10;
+    height: 230px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 330px 40px;
+    gap: 8px;
+    width: 360px;
+    height: 300px;
+}
+
+.footer-text {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 35px;
+    color: white;
+    opacity: 0.9;
+}
+
+.footer-text span {
+    font-weight: bolder;
+}
+
+.footer-text-2 {
+    font-size: small;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 20px;
+}
